@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+   .full-center {
+      @apply flex justify-center items-center;
+   }
+}
+
+@layer base {
+   @font-face {
+      font-family: "Inter";
+      src: url('/src/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+   }
+   h1 {
+      @apply text-2xl font-semibold;
+   }
+   h2 {
+      @apply text-base font-medium;
+   }
+}
+
+/* Estilos para tooltip VuePoper */
+:root {
+   --popper-theme-background-color: #ffffff;
+   --popper-theme-background-color-hover: #ffffff;
+   --popper-theme-text-color: #333333;
+   --popper-theme-border-width: 0px;
+   --popper-theme-border-style: solid;
+   --popper-theme-border-color: #eeeeee;
+   --popper-theme-border-radius: 5px;
+   --popper-theme-padding: 10px;
+   --popper-theme-box-shadow: 0 6px 30px -6px rgba(0, 0, 0, 0.25);
+   /* Estilos vue multiselect*/
+   /* https://github.com/vueform/multiselect */
+   --ms-ring-color: #fff;
+   --ms-spinner-color: #2563EB;
+   --ms-option-bg-selected: #2563EB;
+   --ms-option-bg-selected-pointed: #2563EB;
+   --ms-option-color-pointed: rgb(148 163 184 / 1);
+   --ms-bg-disabled: #F8FAFC;
+   --ms-border-color: #E2E8F0;
+}
+
+/* Estilos para VueDatePicker */
+.dp__theme_light {
+   --dp-background-color: #ffffff;
+   --dp-text-color: #212121;
+   --dp-hover-color: #f3f3f3;
+   --dp-hover-text-color: #212121;
+   --dp-hover-icon-color: #959595;
+   --dp-primary-color: #1976d2;
+   --dp-primary-text-color: #f8f5f5;
+   --dp-secondary-color: #c0c4cc;
+   --dp-border-color: #E2E8F0;
+   --dp-menu-border-color: #ddd;
+   --dp-border-color-hover: #aaaeb7;
+   --dp-disabled-color: #f6f6f6;
+   --dp-scroll-bar-background: #f3f3f3;
+   --dp-scroll-bar-color: #959595;
+   --dp-success-color: #76d275;
+   --dp-success-color-disabled: #a3d9b1;
+   --dp-icon-color: #959595;
+   --dp-danger-color: #ff6f60;
+   --dp-highlight-color: rgba(25, 118, 210, 0.1);
+}
